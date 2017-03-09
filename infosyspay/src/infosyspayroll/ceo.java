@@ -4,7 +4,7 @@ package infosyspayroll;
  * Created by Ajaaz on 3/8/2017.
  */
 public class ceo extends payroll {
-    ceo(int days){
+    public ceo(int days){
         this.days=days;
         bp=150000;
     }
