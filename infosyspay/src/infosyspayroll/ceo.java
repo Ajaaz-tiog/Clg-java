@@ -14,5 +14,8 @@ public class ceo extends payroll {
     public static void main(String arg[]){
         ceo c = new ceo();
         c.calc();
+        Assalamualaikum!
+        Good evening sir! Here is the infosys payroll project sir.
+
     }
 }*/
