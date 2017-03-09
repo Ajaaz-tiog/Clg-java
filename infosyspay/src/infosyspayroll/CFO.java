@@ -1,7 +1,7 @@
 package infosyspayroll;
 
 /**
- * Created by Ajaaz on 3/9/2017.
+  Created by Ajaaz on 3/9/2017.
  */
 public class CFO extends payroll {
    public CFO(int days){

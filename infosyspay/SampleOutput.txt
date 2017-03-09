@@ -1,0 +1,13 @@
+Date: 09-03-2017
+ Select your profession:
+1.CEO
+2.CFO
+3.Project Leader
+4.Project Manager
+5.Team Leader
+6.Team Manager
+7.Engineer
+4   //input
+Enter the no days present!:
+28      //input
+Your Salary is 130666.66666666667

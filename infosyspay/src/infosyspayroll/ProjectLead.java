@@ -1,7 +1,7 @@
 package infosyspayroll;
 
 /**
- * Created by Ajaaz on 3/9/2017.
+  Created by Ajaaz on 3/9/2017.
  */
 public class ProjectLead extends payroll {
     public ProjectLead(int days) {

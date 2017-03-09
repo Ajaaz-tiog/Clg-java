@@ -1,7 +1,7 @@
 package infosyspayroll;
 
 /**
- * Created by Ajaaz on 3/8/2017.
+  Created by Ajaaz on 3/8/2017.
  */
 public class ceo extends payroll {
     public ceo(int days){

@@ -1,6 +1,6 @@
 package infosyspayroll;
  public class payroll{
-
+//
      int bp,days;
      double da,hra,ts;
     public void calc(){
