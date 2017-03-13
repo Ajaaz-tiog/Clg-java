@@ -1,11 +1,13 @@
 package ATM;
 
 public abstract class CardValidation extends atm{
-	boolean validateCard(long cardno, int pin){
+	public boolean validateCard(long cardno, int pin){
 		boolean valid=false;
 		System.out.println("WELCOME TO ATM! \n Enter your card! \n (enter card number.......)");
 		cardno=3654999909909032l;
 		pin=9900;
+		if(!(pin==keyPin))
+			System.exit(9);
 		System.out.println(cardno);
 		System.out.println("Authenticated!");
 		valid=true;

@@ -6,5 +6,5 @@ public abstract class atm{
     float current=0;
     float savings=66000;
 	abstract boolean validateCard(long cardno,int pin);
-	abstract void tranction(boolean valid,int n);
+	abstract void transaction(boolean valid,int n);
 }
