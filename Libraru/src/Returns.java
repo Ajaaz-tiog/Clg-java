@@ -1,16 +1,17 @@
 /**
  * Created by Ajaaz on 3/13/2017.
- *
+ *  Note: ******** Comments are not bullshit pls read them! *********
+ *   the following are   indexes of 3d string array 'arg' which represent respective things
 
-    100-name
-    110-student id
-    120-no. of books issues
-*   000-date1
-*   010-date2
-*   020-date3
-*   200-book1
-*   210-book2
-*   220-book3
+ *   100-name
+ *   110-student id
+ *   120-no. of books issues
+ *   000-date1
+ *   010-date2
+ *   020-date3
+ *   200-book1
+ *   210-book2
+ *   220-book3
  *  001-book id 1
  *  101-book id 2
  *  201-book id 3
@@ -26,9 +27,9 @@ public class Returns implements LibraryInterface {
         arg[0][2][0]="10022017";
         arg[2][0][0]="Head first with java";
         arg[2][1][0]="let us c";
-        arg[2][2][0]="9051";
+        arg[2][2][0]="HC verma";
         arg[0][0][1]="5130";
-        arg[1][0][1]="4376";
+        arg[1][0][1]="9051";
         arg[2][0][1]="8525";
     }
 
@@ -63,9 +64,19 @@ public class Returns implements LibraryInterface {
 
     }
 
+    public void updater(){
+        System.out.println("Enter the issue no.!");
+        int issue=1-1;
+        arg[1][2][0]=String.valueOf(Integer.parseInt(arg[1][2][0])-1);
+        arg[0][issue][0]="-";
+        arg[2][issue][0]="-";
+        arg[issue][0][1]="-";
+
+    }
+
 
     public void mainmenu(){
-        System.out.println("1.Search by book\n2.Search by Student id\n 3.Search by date of issue\n4. exit  ");
+        System.out.println("1.Search by book\n2.Search by Student id\n3.Search by date of issue\n4. exit  ");
         int n=2;
         switch (n){
             case 1:
