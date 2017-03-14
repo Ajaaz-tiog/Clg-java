@@ -1,7 +1,7 @@
 package ATM2;
 import java.io.*;
 public abstract class CardValidation extends atm{
-	public boolean validateCard() throws IOException{
+	public boolean 	validateCard() throws IOException{
 	    InputStreamReader i = new InputStreamReader(System.in);
 	    BufferedReader b = new BufferedReader(i);
 		boolean valid=false;
