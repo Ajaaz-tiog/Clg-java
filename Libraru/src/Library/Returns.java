@@ -17,8 +17,11 @@
  *  201-book id 3
  *
 * */
+//import java.util.*;
+package Library;
 public class Returns implements LibraryInterface {
-    Returns(){
+    int currentDate=17032017;
+public    Returns(){
         arg[1][0][0]="nerd";
         arg[1][1][0]="160415733";
         arg[1][2][0]="3";
@@ -39,19 +42,30 @@ public class Returns implements LibraryInterface {
         for(i=0;i<3;i++){
            if(arg[i][0][1].equals(book))
                 System.out.println("issue no: "+(i+1)+"         Name of book: "+arg[2][i][0]+"          by id: "+arg[1][1][0]+"        Name of Student: "+arg[1][0][0]);
-            else if (i==3)
-                System.out.println("No more books to show ");
         }
+        if (i==3)
+            System.out.println("No more books to show ");
+        updater();
     }
 
     public void searchByID(String id) {
         int i;
-        if (arg[1][1][0].equals(id))
-            for (i = 0; i < 3; i++) {
+        if (!(arg[1][1][0].equals(id)))
+            System.out.println("No ID found!");
+        for (i = 0; i < 3; i++) {
                 System.out.println("issue no: " + (i + 1) + "         Name of book: " + arg[2][i][0] + "          by id: " + arg[1][1][0] + "        Name of Student: " + arg[1][0][0]);
 
             }
+        updater();
     }
+
+//    public int getDifferenceDays(Date d1, Date d2) {
+//        int daysdiff=0;
+//        long diff = d2.getTime() - d1.getTime();
+//        long diffDays = diff / (24 * 60 * 60 * 1000)+1;
+//        daysdiff = (int) diffDays;
+//        return daysdiff;
+//    }
 
     public void searchByDate(String date) {
         int i;
@@ -61,16 +75,21 @@ public class Returns implements LibraryInterface {
             else if (i==3)
                 System.out.println("No more books to show ");
         }
+        updater();
 
     }
 
     public void updater(){
         System.out.println("Enter the issue no.!");
-        int issue=1-1;
+        int ret=1-1;
+        System.out.println("The date of issue was "+arg[0][ret][0]+"today date is "+currentDate);
+        int NoofDays=35;
+        double fine = NoofDays*0.50;
+        System.out.println("The fine is amount Rupees "+fine);
         arg[1][2][0]=String.valueOf(Integer.parseInt(arg[1][2][0])-1);
-        arg[0][issue][0]="-";
-        arg[2][issue][0]="-";
-        arg[issue][0][1]="-";
+        arg[0][ret][0]="-";
+        arg[2][ret][0]="-";
+        arg[ret][0][1]="-";
 
     }
 
@@ -90,9 +109,9 @@ public class Returns implements LibraryInterface {
                 searchByID(id);
                 break;
             case 3:
-                System.out.println("Enter the book ID ");
-                String date="9051";
-                searchByBook(date);
+                System.out.println("Enter the Date ");
+                String date="31012017";
+                searchByDate(date);
                 break;
             case 4:
                 System.exit(2);
