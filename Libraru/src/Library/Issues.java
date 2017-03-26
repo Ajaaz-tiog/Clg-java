@@ -29,7 +29,7 @@ public class Issues extends Returns{
         }
     }
     public boolean issuecheck(){
-        if(arg[1][2][0].equals("3")){
+        if(Integer.parseInt(arg[1][2][0])==3){
             System.out.println("You have already reached max no. issues!");
             return false;
         }

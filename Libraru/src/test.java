@@ -7,33 +7,37 @@ public class test {
 //    test(){
 //
 //    }
-    static void  mainmenu1()throws IOException{
+    static void  mainmenu1(Issues o)throws IOException{
         System.out.println("MainMenu\n 1.Returns 2. Issues 3. Exit");
         InputStreamReader i=new InputStreamReader(System.in);
         BufferedReader b = new BufferedReader(i);
+//        Returns r =new Returns();
+//        Issues o = new Issues();
         int n= Integer.parseInt(b.readLine());
         switch (n){
             case 1:
-               Returns r =new Returns();
-               r.mainmenu();
-               mainmenu1();
+               o.mainmenu();
+               o.searchByID("160415733");
+               mainmenu1(o);
                break;
             case 2:
-                Issues o = new Issues();
+
+
                 o.issue();
-                mainmenu1();
+                o.searchByID("160415733");
+                mainmenu1(o);
                 break;
             case 3:
                 System.exit(2);
                 break;
             default:
                 System.out.println("Enter valid Choice");
-                mainmenu1();
+                mainmenu1(o);
                 break;
         }
     }
     public static void main(String a[]) throws IOException{
-
-        mainmenu1();
+        Issues i = new Issues();
+        mainmenu1(i);
     }
 }

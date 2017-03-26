@@ -45,7 +45,6 @@ public    Returns(){
         }
         if (i==3)
             System.out.println("No more books to show ");
-        updater();
     }
 
     public void searchByID(String id) {
@@ -53,10 +52,9 @@ public    Returns(){
         if (!(arg[1][1][0].equals(id)))
             System.out.println("No ID found!");
         for (i = 0; i < 3; i++) {
-                System.out.println("issue no: " + (i + 1) + "         Name of book: " + arg[2][i][0] + "          by id: " + arg[1][1][0] + "        Name of Student: " + arg[1][0][0]);
+                System.out.println("issue no: " + (i + 1) + "         Name of book: " + arg[2][i][0] +"no. ..is ( "+arg[1][2][0]+" )         by id: " + arg[1][1][0] + "        Name of Student: " + arg[1][0][0]);
 
             }
-        updater();
     }
 
 //    public int getDifferenceDays(Date d1, Date d2) {
@@ -75,7 +73,6 @@ public    Returns(){
             else if (i==3)
                 System.out.println("No more books to show ");
         }
-        updater();
 
     }
 
@@ -102,16 +99,19 @@ public    Returns(){
                 System.out.println("Enter the book ID ");
                 String bookid="9051";
                 searchByBook(bookid);
+                updater();
                 break;
             case 2:
                 System.out.println("Enter the Student ID ");
                 String id="160415733";
                 searchByID(id);
+                updater();
                 break;
             case 3:
                 System.out.println("Enter the Date ");
                 String date="31012017";
                 searchByDate(date);
+                updater();
                 break;
             case 4:
                 System.exit(2);
