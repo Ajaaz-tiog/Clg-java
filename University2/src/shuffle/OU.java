@@ -1,4 +1,6 @@
-//---------------- class: ou-----university_1----Ajaaz - 160415733110 --------------------------------
+/**
+ * Created by Ajaaz on 3/27/2017.
+ */
 package shuffle;
 public class OU extends Abstract {
    public OU() {
@@ -7,7 +9,7 @@ public class OU extends Abstract {
         mmax = 1200;
         eemax = 1333;
         emax = 1852;
-        imax = 2020;
+        imax = 2520;
     }
 
 //    public void updater() {

@@ -1,7 +1,12 @@
-//---------------- class: abstract-----university_1----Ajaaz - 160415733110 --------------------------------
 package shuffle;
+
+/**
+ * Created by ajaaz on 29/3/17.
+ */
 public class DCET extends Abstract {
-    public DCET() {
+//    int cmax, imax, emax, eemax, mmax, rank = 1100;
+
+   public DCET() {
         clg = "DCET";
         cmax = 40000;
         mmax = 54000;
